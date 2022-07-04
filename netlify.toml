@@ -1,7 +1,6 @@
 [build]
-    Command = "npm run lambda-build"
-    Functions = "lambda"
-    publish = "public"
+  command = "remix build"
+  publish = "public"
 
 [dev]
   command = "remix watch"

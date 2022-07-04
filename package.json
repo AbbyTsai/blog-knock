@@ -2,8 +2,7 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
-    "lambda-build": "netlify-lambda build functions && node -p 'process.env'",
+    "build": "remix build && node -p 'process.env'",
     "dev": "cross-env NODE_ENV=development netlify dev",
     "start": "cross-env NODE_ENV=production netlify dev"
   },
