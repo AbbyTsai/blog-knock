@@ -41,13 +41,14 @@ export default function App() {
               </span>
             </span>
         </div>
-        <div className="w-1/3 h-8 bg-purple-300"><Link to="/"><button className="w-full font-black">blog</button></Link></div>
-        <div className="w-1/3 h-8 bg-purple-400 "><Link to="/about"><button className="w-full font-black">about</button></Link></div>
+        <div className="w-1/3 h-8 bg-purple-300"><Link to="/blog"><button className="w-full font-black">blog</button></Link></div>
+        <div className="w-1/3 h-8 bg-purple-400 "><Link to="/"><button className="w-full font-black">about</button></Link></div>
       </div>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        
       </body>
     </html>
   );
