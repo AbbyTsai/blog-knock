@@ -1,5 +1,5 @@
 [build]
-    Command = "npm run lambda-build && remix build"
+    Command = "npm run lambda-build"
     Functions = "lambda"
     publish = "public"
 
