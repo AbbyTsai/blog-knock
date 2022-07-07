@@ -11,6 +11,7 @@ import {Link} from "@remix-run/react";
 
 import styles from "./styles/app.css";
 
+
 export function links() {
   return [{ rel: "stylesheet", href: styles }]
 }
@@ -20,6 +21,7 @@ export const meta = () => ({
   title: "KNOCK with Thanks ❤!",
   viewport: "width=device-width,initial-scale=1",
 });
+
 
 export default function App() {
   return (
@@ -41,14 +43,14 @@ export default function App() {
               </span>
             </span>
         </div>
-        <div className="w-1/3 h-8 bg-purple-300"><Link to="/blog"><button className="w-full font-black">blog</button></Link></div>
-        <div className="w-1/3 h-8 bg-purple-400 "><Link to="/"><button className="w-full font-black">about</button></Link></div>
+        <div className="w-1/3 h-8 bg-purple-300"><Link to="/blog"><button className="w-full font-black text-6xl">blog</button></Link></div>
+        <div className="w-1/3 h-8 bg-purple-400 "><Link to="/"><button className="w-full font-black text-6xl">about</button></Link></div>
       </div>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        
+    
       </body>
     </html>
   );
